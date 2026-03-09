@@ -5,4 +5,3 @@ function reverseString(str: string) {
   const result = reversed.join("");
   return result;
 }
-
