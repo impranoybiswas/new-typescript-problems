@@ -7,4 +7,4 @@ const students = [
 ];
 
 
-students.map((student) => console.log({Name : student.name, Age : student.age}));
+students.map((student) => console.log(student));
