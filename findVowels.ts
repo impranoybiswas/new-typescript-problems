@@ -2,7 +2,23 @@ function getVowels(str: string) {
   return str.match(/[aeiou]/gi) || [];
 }
 
-function getVowelsManual(str: string) {
+function getVowels2(str: string) {
+  let vowels: string[] = [];
+  for (let i = 0; i < str.length; i++) {
+    if (
+      str[i] === "a" ||
+      str[i] === "e" ||
+      str[i] === "i" ||
+      str[i] === "o" ||
+      str[i] === "u"
+    ) {
+      vowels.push(str[i]);
+    }
+  }
+  return vowels;
+}
+
+function getVowelsCount(str: string) {
   let vowelCount = 0;
   let stringArr = str.toLowerCase().split("");
   for (let i = 0; i < stringArr.length; i++) {
@@ -19,7 +35,7 @@ function getVowelsManual(str: string) {
   return vowelCount;
 }
 
-function getVowelsManual2(str: string) {
+function getVowelsCount2(str: string) {
   let vowelCount = 0;
   let stringArr = str.toLowerCase().split("");
   let vowels = ["a", "e", "i", "o", "u"];
@@ -35,4 +51,10 @@ function getVowelsLength(str: string) {
   return getVowels(str).length || 0;
 }
 
-console.log(getVowelsManual2("javascript"));
+export {
+  getVowels,
+  getVowels2,
+  getVowelsCount,
+  getVowelsCount2,
+  getVowelsLength,
+};

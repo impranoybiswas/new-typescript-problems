@@ -8,3 +8,5 @@ const trianglePattern = (n: number, s: string = "#") => {
     }
     return result;
 }
+
+export { trianglePattern }

@@ -1,10 +1,6 @@
-const nums = [1,4,5,2,2,2,4,2];
-const num2 = [2];
 
-function removeDuplicate(arr : number[]) {
 
-    
-
+export function removeDuplicate(arr: number[]) {
+  return Array.from(new Set(arr));
 }
 
-console.log(removeDuplicate(nums));
