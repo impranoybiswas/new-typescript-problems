@@ -19,8 +19,20 @@ function getVowelsManual(str: string) {
   return vowelCount;
 }
 
+function getVowelsManual2(str: string) {
+  let vowelCount = 0;
+  let stringArr = str.toLowerCase().split("");
+  let vowels = ["a", "e", "i", "o", "u"];
+  for (let i = 0; i < stringArr.length; i++) {
+    if (vowels.includes(stringArr[i])) {
+      vowelCount++;
+    }
+  }
+  return vowelCount;
+}
+
 function getVowelsLength(str: string) {
   return getVowels(str).length || 0;
 }
 
-console.log(getVowelsManual("javascript"));
+console.log(getVowelsManual2("javascript"));
