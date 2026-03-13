@@ -1,5 +1,5 @@
 export function total(nums: number[]) {
-  const result = nums.reduce((acc, curr) => acc + curr);
+  const result = nums.reduce((acc, curr) => acc + curr, 0);
   return result;
 }
 
@@ -10,5 +10,4 @@ export function total2(nums: number[]) {
   }
   return result;
 }
-
 
