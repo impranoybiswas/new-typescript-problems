@@ -1,4 +1,5 @@
 export function verifyPassword(password: string) {
+  // Full Regex: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
   if (!/.{8,}/.test(password)) {
     return "Password must be at least 8 characters long";
   }
