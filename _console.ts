@@ -26,6 +26,7 @@ import {
   rightTriangle,
 } from "./genarateShapes.ts";
 import { generateSecretKey } from "./generateSecretKey.ts";
+import { nextFourReverse } from "./NextSetWithReverse.ts";
 import {
   removeDuplicate
 } from "./RemoveDuplicate.ts";
@@ -98,4 +99,21 @@ const serial3: number[] = [5, 10, 15, 25];
 // console.log(flattenArray([[1,2,3], ["a","b","d"], [4,6]]));
 
 
-console.log("Call Function in function", calculation().add(5, 10));
+// console.log("Call Function in function", calculation().add(5, 10));
+
+// var cancellable = function(fn : Function, args : any[], t : number) {
+
+//     const timeoutId = setTimeout(() => {
+//         fn(...args);
+//     }, t);
+
+//     const cancel = () => {
+//         clearTimeout(timeoutId);
+//     };
+//     return cancel;
+// }
+
+// console.log(cancellable((x : number) => x * 5, [2], 20));
+
+
+console.log(nextFourReverse([1,2,3,4]))
