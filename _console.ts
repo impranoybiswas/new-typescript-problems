@@ -17,21 +17,22 @@ import {
 } from "./findVowels.ts";
 import { flattenArray } from "./flattenArray.ts";
 import { calculation } from "./functionObjects.ts";
-import { genarateFibonacci } from "./genarateFibonacci.ts";
-import { generatePassword } from "./genaratePassword.ts";
+import { genarateFibonacci } from "./generateFibonacci.ts";
+import { generatePassword } from "./generatePassword.ts";
+import { generateSecretKey } from "./generateSecretKey.ts";
+import { getBanglaDate } from "./getBanglaDate.ts";
+import { getBanglaTime } from "./getBanglaTime.ts";
 import {
   hollowRectangle,
   pyramid,
   Rectangle,
   rightTriangle,
-} from "./genarateShapes.ts";
-import { generateSecretKey } from "./generateSecretKey.ts";
+} from "./generateShapes.ts";
 import { nextFourReverse } from "./NextSetWithReverse.ts";
-import {
-  removeDuplicate
-} from "./RemoveDuplicate.ts";
+import { removeDuplicate } from "./RemoveDuplicate.ts";
 import { reverseSentance, reverseWord } from "./ReverseString.ts";
 import { verifyPassword } from "./verifyPassword.ts";
+import { getCountryNameByCode } from "./getCountryNameByCode.ts";
 
 const word: string = "JavaScript";
 const words: string[] = ["Javascript", "PHP", "Java", "Python"];
@@ -47,6 +48,8 @@ const serial: number[] = [1, 2, 3, 4, 5];
 const serial1: number[] = [4, 8, 16, 32];
 const serial2: number[] = [2, 4, 8, 10];
 const serial3: number[] = [5, 10, 15, 25];
+
+const dateString = "2026-06-13T12:00:00+06:00";
 
 // console.log("Arithmetic Sum : ", arithmeticSum(serial));
 // console.log("Geometric Sum : ", geometricSum(serial1));
@@ -98,7 +101,10 @@ const serial3: number[] = [5, 10, 15, 25];
 
 // console.log(flattenArray([[1,2,3], ["a","b","d"], [4,6]]));
 
+// console.log(nextFourReverse([1,2,3,4]))
+
+// console.log(getBanglaDate(dateString));
+// console.log(getBanglaTime(dateString));
 
 
-
-console.log(nextFourReverse([1,2,3,4]))
+console.log(getCountryNameByCode("BD", "bn"));
