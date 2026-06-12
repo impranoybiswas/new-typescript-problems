@@ -33,6 +33,7 @@ import { removeDuplicate } from "./RemoveDuplicate.ts";
 import { reverseSentance, reverseWord } from "./ReverseString.ts";
 import { verifyPassword } from "./verifyPassword.ts";
 import { getCountryNameByCode } from "./getCountryNameByCode.ts";
+import { numberToBengaliWords } from "./numberToBengaliWords.ts";
 
 const word: string = "JavaScript";
 const words: string[] = ["Javascript", "PHP", "Java", "Python"];
@@ -107,4 +108,6 @@ const dateString = "2026-06-13T12:00:00+06:00";
 // console.log(getBanglaTime(dateString));
 
 
-console.log(getCountryNameByCode("BD", "bn"));
+// console.log(getCountryNameByCode("BD", "bn"));
+
+console.log(numberToBengaliWords(1));
